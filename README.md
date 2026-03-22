@@ -73,4 +73,4 @@ Information about configuring Kaolin themes is available in [the project wiki](h
 
 # Mode-line
 
-The mode-line config isn't a part of the Kaolin theme, you can find my telephone-line config [here](https://github.com/ogdenwebb/elmax/tree/master/modeline).
+The mode-line config isn't a part of the Kaolin theme, you can find my telephone-line config [here](https://github.com/ogdenwebb/snug-emacs/blob/main/env/modeline/modeline-common.el).
