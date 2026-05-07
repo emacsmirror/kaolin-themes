@@ -98,55 +98,55 @@ If nil, use default folder icons instead."
         ;; Set fallback icon
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
-                                                    :height 1.10
-                                                    :v-adjust 0.0))
+                                                     :height 1.10
+                                                     :v-adjust 0.0))
          :extensions (fallback)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "subject"
-                                                   :v-adjust -0.2
-                                                   :height 1.3
-                                                   :face 'font-lock-variable-name-face))
+                                                      :v-adjust -0.2
+                                                      :height 1.3
+                                                      :face 'font-lock-variable-name-face))
          :extensions (root-closed root-open)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "folder_open"
-                                               ;; :v-adjust 0.05
-                                               :height 1.1))
+                                                      ;; :v-adjust 0.05
+                                                      :height 1.1))
          ;; :face 'font-lock-doc-face))
          :extensions (dir-open "temp-open" "bin-open")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-material "folder"
-                                                   ;; :v-adjust 0.05
-                                                   :height 1.1))
+                                                      ;; :v-adjust 0.05
+                                                      :height 1.1))
          :extensions (dir-closed "temp-closed" "bin-closed")
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "remove"
-                                             :size 1.0
-                                             ;; :v-adjust 0.1
-                                             :face 'font-lock-keyword-face))
+                                                     :size 1.0
+                                                     ;; :v-adjust 0.1
+                                                     :face 'font-lock-keyword-face))
          :extensions (tag-open)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format "%s " (all-the-icons-material "add"
-                                             :size 1.0
-                                             ;; :v-adjust 0.1
-                                             :face 'font-lock-keyword-face))
+                                                     :size 1.0
+                                                     ;; :v-adjust 0.1
+                                                     :face 'font-lock-keyword-face))
          :extensions (tag-closed)
          :fallback 'same-as-icon)
 
         (treemacs-create-icon
          ;; :icon (format "%s " (all-the-icons-faicon "tag"
          :icon (format "%s " (all-the-icons-material "label"
-                                             :height 0.9
-                                             :face 'font-lock-type-face))
+                                                     :height 0.9
+                                                     :face 'font-lock-type-face))
          :extensions (tag-leaf)
          :fallback 'same-as-icon)
 
@@ -271,7 +271,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "terminal" :v-adjust 0.05)) :extensions ("sh" "zsh" "fish") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nginx" :v-adjust 0.05)) :extensions ("nginx") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nimrod")) :extensions ("nim" "nims" "nimble") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix" :v-adjust -0.09)) :extensions ("nix") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nix" :v-adjust -0.09)) :extensions ("nix" "flake.nix") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "nvidia")) :extensions ("cu" "cuh") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "perl")) :extensions ("pl" "plx" "pm" "perl") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "raku")) :extensions ("pm6" "p6" "t6" "raku" "rakumod" "rakudoc" "rakutest") :fallback 'same-as-icon)
@@ -307,7 +307,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "ejs")) :extensions ("ejs") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "gulp")) :extensions ("gulpfile") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "grunt")) :extensions ("gruntfile") :fallback 'same-as-icon)
-        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge" :v-adjust 0.05)) :extensions ("js" "es0" "es1" "es2" "es3" "es4" "es5" "es6" "es7" "es8" "es9") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "javascript-badge" :v-adjust 0.05)) :extensions ("js" "es0" "es1" "es2" "es3" "es4" "es5" "es6" "es7" "es8" "es9" "tern-config") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "jsx2-alt")) :extensions ("jsx") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-alltheicon "nodejs")) :extensions ("node") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "npm")) :extensions ("npmignore" "package.json" "package-lock.json") :fallback 'same-as-icon)
@@ -316,6 +316,7 @@ If nil, use default folder icons instead."
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "vue")) :extensions ("vue") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "webpack")) :extensions ("webpack") :fallback 'same-as-icon)
         (treemacs-create-icon :icon (format " %s " (all-the-icons-fileicon "yarn")) :extensions ("yarn.lock") :fallback 'same-as-icon)
+        (treemacs-create-icon :icon (format " %s " (all-the-icons-material "dvr")) :extensions ("desktop") :fallback 'same-as-icon)
 
         ;; Media files icon
         (treemacs-create-icon
@@ -347,13 +348,13 @@ If nil, use default folder icons instead."
          :fallback 'same-as-icon)
 
         (treemacs-create-icon :icon (format " %s " (all-the-icons-octicon "checklist" :v-adjust 0.05))
-         :extensions ("TODO")
-         :fallback 'same-as-icon)
+                              :extensions ("TODO")
+                              :fallback 'same-as-icon)
 
         (treemacs-create-icon
          :icon (format " %s " (all-the-icons-octicon "book"
-                       :height 1.1
-                       :v-adjust 0.0))
+                                                     :height 1.1
+                                                     :v-adjust 0.0))
          :extensions ("rst" "txt" "contribute" "license" "readme" "readme-open" "readme-closed" "docs-open" "docs-closed" "changelog")
          :fallback 'same-as-icon)
 
