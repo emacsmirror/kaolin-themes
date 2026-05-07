@@ -178,7 +178,6 @@ Otherwise inherit from comments."
 (define-obsolete-variable-alias 'kaolin-hl-line-colored 'kaolin-themes-hl-line-colored "1.3.4")
 (define-obsolete-variable-alias 'kaolin-italic-comments 'kaolin-themes-italic-comments "1.3.4")
 (define-obsolete-variable-alias 'kaolin-git-gutter-solid 'kaolin-themes-git-gutter-solid "1.3.4")
-(define-obsolete-variable-alias 'kaolin-wave 'kaolin-themes-underline-wave "1.3.4")
 
 (defun kaolin-themes--make-name (sym)
   "Format kaolin-<sym> from SYM."
@@ -188,7 +187,7 @@ Otherwise inherit from comments."
   "Add elements to BASE-LIST from ADD-LIST without dublicates. Returns a new list as result."
   (let ((res (copy-alist base-alist)))
     (cl-loop for el in add-alist
-                    do (setf (map-elt res (car el)) (cdr el)))
+             do (setf (map-elt res (car el)) (cdr el)))
     res))
 
 ;; (defun kaolin-themes-palette-get (name)
@@ -221,7 +220,7 @@ Use kaolin-valley-dark-theme.el as example."
                                    (kaolin-themes--merge-alist kaolin-palette opt-palette)
                                  kaolin-palette))
          (kaolin-theme-faces (if opt-faces
-                                   (kaolin-themes--merge-alist kaolin-faces opt-faces)
+                                 (kaolin-themes--merge-alist kaolin-faces opt-faces)
                                kaolin-faces)))
 
     `(autothemer-deftheme ,kaolin-theme-name ,doc
@@ -237,27 +236,27 @@ Use kaolin-valley-dark-theme.el as example."
                           ,kaolin-theme-faces
 
                           ;; Set vars or execute an arbitrary function body
-                           ,@body
+                          ,@body
 
-                           ;; (custom-theme-set-faces ',kaolin-theme-name
-                           ;;                         ,@kaolin-common-vars)
+                          ;; (custom-theme-set-faces ',kaolin-theme-name
+                          ;;                         ,@kaolin-common-vars)
 
 
-                           (custom-theme-set-variables ',kaolin-theme-name
-                              `(ansi-color-names-vector [,kaolin-black
-                                                         ,kaolin-red
-                                                         ,kaolin-green
-                                                         ,kaolin-yellow
-                                                         ,kaolin-blue
-                                                         ,kaolin-magenta
-                                                         ,kaolin-cyan
-                                                         ,kaolin-white])
-                               `(pos-tip-background-color ,tooltip-bg)
-                               `(pos-tip-foreground-color ,tooltip-fg))
+                          (custom-theme-set-variables ',kaolin-theme-name
+                                                      `(ansi-color-names-vector [,kaolin-black
+                                                                                 ,kaolin-red
+                                                                                 ,kaolin-green
+                                                                                 ,kaolin-yellow
+                                                                                 ,kaolin-blue
+                                                                                 ,kaolin-magenta
+                                                                                 ,kaolin-cyan
+                                                                                 ,kaolin-white])
+                                                      `(pos-tip-background-color ,tooltip-bg)
+                                                      `(pos-tip-foreground-color ,tooltip-fg))
 
-                           ;; Provide theme
-                           (provide-theme ',kaolin-theme-name)
-                           )))
+                          ;; Provide theme
+                          (provide-theme ',kaolin-theme-name)
+                          )))
 
 
 ;;;###autoload
