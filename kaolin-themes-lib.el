@@ -801,19 +801,19 @@
 
     ;; Linum & nlinum
     (linum                        (:inherit 'default :background line-num-bg :foreground line-num-fg :bold nil
-                                               :italic nil :underline nil :strike-through nil))
+                                            :italic nil :underline nil :strike-through nil))
     (linum-highlight-face          (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
-                                                :italic nil :underline nil :strike-through nil))
+                                             :italic nil :underline nil :strike-through nil))
     (nlinum-current-line          (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
-                                               :italic nil :underline nil :strike-through nil))
+                                            :italic nil :underline nil :strike-through nil))
     (linum-relative-current-line  (:inherit 'linum-highlight-face))
     (nlinum-relative-current-face (:inherit 'nlinum-current-line))
 
     ;; Native line numbers
     (line-number                  (:inherit 'default :background line-num-bg :foreground line-num-fg :bold nil
-                                               :italic nil :underline nil :strike-through nil))
+                                            :italic nil :underline nil :strike-through nil))
     (line-number-current-line     (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
-                                               :italic nil :underline nil :strike-through nil))
+                                            :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
     (which-func (:foreground orange1))
@@ -1168,6 +1168,7 @@
     (flyspell-duplicate (:underline (:style underline-style :color warning)))
     (flyspell-incorrect (:underline (:style underline-style :color err)))
 
+
     ;; Hydra
     ;; (hydra-face-red      (:foreground red1))
     (hydra-face-red      (:foreground err))
@@ -1203,6 +1204,13 @@
 
     ;; Slime
     (slime-repl-inputed-output-face (:foreground type))
+
+    ;; Jinx
+    (jinx-annotation (:foreground doc))
+    (jinx-highlight  (:background 'unspecified :foreground hl :bold bold :underline underline))
+    (jinx-key        (:foreground keysym))
+    (jinx-misspelled (:underline (:style underline-style :color warning)))
+    (jinx-save       (:inherit 'success))
 
     ;; Js-mode
     (js2-private-function-call    (:foreground const))
