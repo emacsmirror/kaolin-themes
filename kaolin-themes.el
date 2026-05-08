@@ -102,7 +102,8 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-underline-wave t
-  "When t, use the wave underline style to highlight warnings and error."
+  "When t, use the wave underline style to highlight warnings and error.
+Otherwise use straight line."
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-hl-line-colored nil
@@ -118,7 +119,8 @@
 
 
 (defcustom kaolin-themes-comments-style 'normal
-  "Sets the style of commentaries: normal which is used by default, alt to use colored commentary or contrast to make them more distinguished."
+  "Sets the style of commentaries: normal which is used by default, alt to use
+colored commentary or contrast to make them more distinguished."
   :type '(choice (const :tag "Normal" normal)
                  (const :tag "Colored" alt)
                  (const :tag "Contrast" contrast))
@@ -146,7 +148,7 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-distinct-verbatim nil
-  "Use distinct background color for verbatim face (org-mode) instead of colorful text."
+  "Use distinct background color for verbatim face (org-mode) instead of text."
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-org-scale-headings t
@@ -158,13 +160,14 @@
   :group 'kaolin-themes)
 
 (defcustom kaolin-themes-modeline-padded nil
-  "Add extra padding for mode-line. Should be either nil/t or desired integer value. It has prior over `kaolin-themes-modeline-border'."
+  "Add extra padding for mode-line. Should be either nil/t or integer value.
+It has priority over `kaolin-themes-modeline-border'."
   :group 'kaolin-themes
   :type '(choice integer boolean))
 
 (defcustom kaolin-themes-distinct-metakeys t
   "If not-nil, enable distinct color for metadata key (e.g. metakeys in org-mode).
-Otherwise inherit from comments."
+Otherwise inherit style from comments."
   :group 'kaolin-themes)
 
 (defface kaolin-themes-boolean nil
