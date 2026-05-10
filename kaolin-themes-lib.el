@@ -1028,11 +1028,18 @@
     (company-preview-common           (:background bg2 :foreground diff-mod))
     (company-preview-search           (:inherit 'company-tooltip-search))
 
-    ;; corfu
+    ;; Consult
+    (consult-async-split       (:foreground err))
+    (consult-file              (:foreground keyword)) ; TODO: (?) find a better color
+    (consult-highlight-mark    (:foreground hl))
+    (consult-highlight-match   (:foreground hl))
+    (consult-key               (:foreground keysym))
+
+    ;; Corfu
     (corfu-background (:background tooltip-bg))
-    (corfu-echo       (:foreground doc))
-    (corfu-current    (:background tooltip-hl-bg :foreground tooltip-hl-fg))
     (corfu-border     (:background bg4))
+    (corfu-current    (:background tooltip-hl-bg :foreground tooltip-hl-fg))
+    (corfu-echo       (:foreground doc))
 
     ;; all-the-icons
     (all-the-icons-red      (:foreground red1))
