@@ -1921,9 +1921,12 @@
 
 
     ;; Default completion
-    (completions-common-part (:foreground functions))
-    (completions-annotations (:foreground doc))
-    ;; (completions-first-difference (:foreground diff-mod))
+    (completions-annotations      (:foreground doc))
+    (completions-common-part      (:foreground search1))
+    (completions-first-difference (:foreground search2))
+    (completions-group-title      (:inherit 'shadow :italic kaolin-themes-italic-comments))
+    (completions-group-separator  (:inherit 'shadow))
+    (completions-highlight        (:inherit 'hl-line))
 
     ;; Selectrum
     ;; (selectrum-quick-keys-match       (:background keysym :foreground bg1 :underline underline))
