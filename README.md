@@ -4,6 +4,22 @@
 [![Emacs](https://img.shields.io/badge/Emacs-25.1%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
+## 💛 💙 The war in Ukraine is continued and I'm asking for help 💙 💛
+
+I chose a few organisation that focused on humanitarian aids and animal rescue. All these organisations are publishing frequent reports about their impact. 
+
+If you are willing and able to help, please consider making a donation to those projects: 
+
+- [Nova Ukraine](https://novaukraine.org/) — nonprofit organization dedicated to providing humanitarian aid to the people of Ukraine and raising awareness about Ukraine in the United States and throughout the world.
+- [Leleka Foundation](https://leleka.care/en/) — focusing on the urgent supply of critical medical supplies and protective gear to Ukraine’s defenders and civilians.
+- [UAnimals](https://uanimals.org/en/) — Ukraine's first modern animal rights organization, UAnimals became the country's largest animal rescue organization during wartime.
+- [Razom for Ukraine](https://www.razomforukraine.org/) — Razom for Ukraine is a leading advocacy and humanitarian organization with 4-star Charity Navigator rating.
+- [Hospitallers](https://www.hospitallers.org.uk/) — focus on sourcing and delivering medical supplies for paramedics who save human lives in Ukraine.​
+- [help us help](https://helpushelp.charity/) — a federally registered Canadian charitable organization, focused on humanitarian aid and educational projects in Ukraine and in Canada.
+
+
+# Description
+
 Kaolin is a set of eye pleasing themes for GNU Emacs with support for a large number of modes and external packages.
 
 ![kaolin-logo](https://user-images.githubusercontent.com/9018005/31884317-5715a32c-b7f5-11e7-8dce-0416051f55ce.png)
