@@ -4,7 +4,7 @@
 [![Emacs](https://img.shields.io/badge/Emacs-25.1%2B-d24b83.svg)](https://www.gnu.org/software/emacs/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](http://www.gnu.org/licenses/gpl-3.0)
 
-## 💛 💙 The war in Ukraine is continued and I'm asking for help 💙 💛
+## 💛 💙 The war in Ukraine is ongoing and I'm asking for help 💙 💛
 
 I chose a few organisation that focused on humanitarian aids and animal rescue. All these organisations are publishing frequent reports about their impact. 
 
