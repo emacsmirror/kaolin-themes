@@ -1010,6 +1010,13 @@
     (info-title-3     (:foreground header :weight 'bold :height 1.1))
     (info-title-4     (:foreground header :weight 'bold))
 
+    ;; help mode
+    ;; TODO: define a custom variable
+    ;; to select style for keybindings - i.e. with and without border
+    (help-key-binding   (:background bg2 :foreground keysym :weight 'bold :box (:line-width 1 :color button-border :style nil)))
+    (help-argument-name (:inherit 'italic :foreground var))
+    (help-for-help-header (:inherit 'header-line))
+
     ;; Helpful
     (helpful-heading (:foreground header :weight 'bold :height 1.1))
 
