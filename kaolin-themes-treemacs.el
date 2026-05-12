@@ -1,4 +1,6 @@
 ;;; kaolin-themes-treemacs.el --- treemacs customization for Kaolin themes -*- lexical-binding: t; no-byte-compile: t; -*-
+;;
+;; This file is not part of GNU Emacs.
 ;;; Commentary:
 
 ;;; Code:

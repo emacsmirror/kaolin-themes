@@ -1,4 +1,6 @@
 ;;; kaolin-themes-lib.el --- Kaolin-themes library, provides common parts for the package.  -*- lexical-binding: t; -*-
+;;
+;; This file is not part of GNU Emacs.
 ;;; Commentary:
 ;;
 
