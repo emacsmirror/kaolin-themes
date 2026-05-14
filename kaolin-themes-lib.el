@@ -912,7 +912,16 @@
     (debbugs-gnu-stale-5   (:foreground rb5))
     (debbugs-gnu-tagged    (:foreground prep))
 
-    ;; TODO: Newsticker faces
+    ;; Newsticker
+    (newsticker-feed-face  (:inherit 'default))
+    (newsticker-extra-face (:inherit 'shadow :height 0.8))
+    ;; (newsticker-enclosure-face (:inherit 'default))
+    (newsticker-treeview-face (:inherit 'default))
+    (newsticker-treeview-new-face (:inherit 'default))
+    (newsticker-treeview-old-face (:foreground functions))
+    (newsticker-treeview-immortal-face (:foreground warning))
+    (newsticker-treeview-selection-face (:inherit 'hl-line))
+    (newsticker-treeview-obsolete-face (:foreground 'fg4 :strike-through t))
 
     ;; Modeline
     (mode-line           (:background line-bg1 :foreground line-fg :bold nil
