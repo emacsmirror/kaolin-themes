@@ -788,7 +788,8 @@
     (highlight-indentation-current-column-face  (:background bg3))
 
     ;; Eldoc
-    (eldoc-highlight-function-argument  (:inherit 'font-lock-constant-face))
+    ;; (eldoc-highlight-function-argument  (:inherit 'font-lock-constant-face))
+    (eldoc-highlight-function-argument  (:foreground hl))
 
     ;; Eldoc-box
     (eldoc-box-body (:background tooltip-bg))
