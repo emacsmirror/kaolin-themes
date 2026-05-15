@@ -1669,7 +1669,7 @@
     (nim-font-lock-number-face (:foreground num))
 
     ;; Evil ex
-    (evil-ex-info                   (:foreground orange1))
+    (evil-ex-info                   (:foreground warning))
     (evil-ex-substitute-matches     (:background 'unspecified :foreground err :underline underline))
     (evil-ex-substitute-replacement (:background 'unspecified :foreground spring-green1))
     (evil-ex-lazy-highlight         (:inherit 'lazy-highlight))
