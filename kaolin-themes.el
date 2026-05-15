@@ -255,7 +255,8 @@ Use kaolin-valley-dark-theme.el as example."
                                                                                  ,kaolin-cyan
                                                                                  ,kaolin-white])
                                                       `(pos-tip-background-color ,tooltip-bg)
-                                                      `(pos-tip-foreground-color ,tooltip-fg))
+                                                      `(pos-tip-foreground-color ,tooltip-fg)
+                                                      `(lsp-ui-imenu-colors '(,keyword ,functions)))
 
                           ;; Provide theme
                           (provide-theme ',kaolin-theme-name)

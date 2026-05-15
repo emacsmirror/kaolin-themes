@@ -1414,8 +1414,27 @@
     (imenu-list-entry-subalist-face-3 (:inherit 'imenu-list-entry-face-3 :bold bold))
 
     ;; lsp-mode
-    ;; TODO:
-
+    (lsp-details-face                          (:height 0.9 :foreground comment))
+    (lsp-face-rename                           (:background 'unspecified :foreground err :underline underline))
+    (lsp-installation-buffer-face              (:foreground diff-add))
+    (lsp-installation-finished-buffer-face     (:foreground diff-mod))
+    (lsp-signature-highlight-function-argument (:foreground hl))
+    (lsp-signature-posframe                    (:inherit 'tooltip))
+    ;; lsp-headerline TODO:
+    (lsp-headerline-breadcrumb-separator-face (:inherit 'shadow))
+    ;; lsp-ui
+    (lsp-ui-doc-background          (:background tooltip-bg))
+    (lsp-ui-doc-header              (:background header :foreground bg1))
+    (lsp-ui-peek-filename           (:foreground keyword))
+    (lsp-ui-peek-highlight          (:background tooltip-hl-bg :foreground tooltip-hl-fg))
+    (lsp-ui-peek-line-number        (:foreground line-num-fg))
+    (lsp-ui-peek-list               (:background tooltip-bg))
+    (lsp-ui-peek-peek               (:background tooltip-bg))
+    (lsp-ui-peek-selection          (:background selection :foreground fg4))
+    (lsp-ui-sideline-code-action    (:foreground warning))
+    (lsp-ui-sideline-current-symbol (:inherit 'bold  :box (:line-width -1 :color button-border)))
+    (lsp-ui-sideline-symbol         (:foreground comment :box (:line-width -1 :color button-border)))
+    (lsp-ui-sideline-symbol-info    (:inherit 'italic))
 
     ;; Treemacs
     (treemacs-root-face             (:foreground keyword :height 1.2 :underline nil))
