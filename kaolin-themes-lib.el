@@ -478,6 +478,8 @@
     (bool        num)
     (prep        violet4)
     (link        prep)
+    (filepath    str)
+    (filename    var)
     ;; MAYBE: add orange/yellow background?
     (warning     orange1)
     (err         red1)
@@ -974,7 +976,7 @@
     (doom-modeline-evil-operator-state (:foreground evil-operator))
     (doom-modeline-evil-emacs-state    (:foreground evil-emacs))
     (doom-modeline-panel               (:background hl :foreground line-bg1))
-    (doom-modeline-buffer-path         (:foreground var))
+    (doom-modeline-buffer-path         (:foreground filepath))
     (doom-modeline-buffer-major-mode   (:foreground str))
 
     ;; Powerline
@@ -993,7 +995,7 @@
     (sml/line-number      (:foreground chartreuse1))
     (sml/modes            (:foreground magenta4))
     (sml/global           (:foreground cyan3))
-    (sml/filename         (:foreground teal1))
+    (sml/filename         (:foreground filename))
     (sml/charging         (:foreground teal1))
     (sml/discharging      (:foreground red1))
     (sml/modified         (:foreground spring-green1))
@@ -1053,7 +1055,7 @@
 
     ;; Consult
     (consult-async-split       (:foreground err))
-    (consult-file              (:foreground keyword)) ; TODO: (?) find a better color
+    (consult-file              (:foreground filepath))
     (consult-highlight-mark    (:foreground hl))
     (consult-highlight-match   (:foreground hl))
     (consult-key               (:foreground keysym))
@@ -1429,7 +1431,7 @@
     ;; lsp-ui
     (lsp-ui-doc-background          (:background tooltip-bg))
     (lsp-ui-doc-header              (:background header :foreground bg1))
-    (lsp-ui-peek-filename           (:foreground keyword))
+    (lsp-ui-peek-filename           (:foreground filename))
     (lsp-ui-peek-highlight          (:background tooltip-hl-bg :foreground tooltip-hl-fg))
     (lsp-ui-peek-line-number        (:foreground line-num-fg))
     (lsp-ui-peek-list               (:background tooltip-bg))
