@@ -817,6 +817,10 @@
                                             :italic nil :underline nil :strike-through nil))
     (line-number-current-line     (:inherit 'default :background line-num-bg :foreground line-num-hl :bold bold
                                             :italic nil :underline nil :strike-through nil))
+    (line-number-major-tick       (:inherit 'default :background bg4 :foreground fg1 :bold bold
+                                            :italic nil :underline nil :strike-through nil))
+    (line-number-minor-tick       (:inherit 'default :background bg3 :foreground line-num-fg :bold nil
+                                            :italic nil :underline nil :strike-through nil))
 
     ;; Which-function-mode
     (which-func (:foreground orange1))
