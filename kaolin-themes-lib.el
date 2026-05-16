@@ -478,8 +478,8 @@
     (bool        num)
     (prep        violet4)
     (link        prep)
-    (filepath    str)
-    (filename    var)
+    (filepath    keyword) ;; MAYBE find a better color
+    (filename    str)
     ;; MAYBE: add orange/yellow background?
     (warning     orange1)
     (err         red1)
@@ -1934,15 +1934,15 @@
     ;; Marginalia
     (marginalia-documentation (:inherit 'font-lock-doc-face))
     (marginalia-key           (:foreground keysym))
-    (marginalia-mode          (:foreground str))
+    (marginalia-mode          (:foreground keyword))
     (marginalia-number        (:foreground num))
     (marginalia-size          (:foreground num))
     (marginalia-type          (:foreground type))
-    (marginalia-date          (:foreground str))
+    (marginalia-date          (:foreground prep))
     (marginalia-value         (:foreground var))
     (marginalia-char          (:foreground hl))
     (marginalia-on            (:inherit 'success))
-    (marginalia-file-owner    (:foreground prep))
+    (marginalia-file-owner    (:foreground functions))
 
     (marginalia-file-name       (:foreground str))
     (marginalia-file-priv-dir   (:foreground keyword))
